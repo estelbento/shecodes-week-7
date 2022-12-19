@@ -18,7 +18,23 @@ function formatDate(timestamp) {
     "saturday",
   ];
   let day = days[date.getDay()];
-  return `${day} ${hours}:${minutes}`;
+  let months = [
+    "jan.",
+    "feb.",
+    "mar.",
+    "apr.",
+    "may",
+    "jun.",
+    "jul.",
+    "aug.",
+    "sep.",
+    "oct.",
+    "nov.",
+    "dec.",
+  ];
+  let month = months[date.getMonth()];
+  let dayOfMonth = date.getDate();
+  return `${day} ${dayOfMonth} ${month} ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {

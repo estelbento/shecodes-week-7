@@ -9,32 +9,32 @@ function formatDate(timestamp) {
     minutes = `0${minutes}`;
   }
   let days = [
-    "sunday",
-    "monday",
-    "tuesday",
-    "wednesday",
-    "thursday",
-    "friday",
-    "saturday",
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
   ];
   let day = days[date.getDay()];
   let months = [
-    "jan.",
-    "feb.",
-    "mar.",
-    "apr.",
+    "jan",
+    "feb",
+    "mar",
+    "apr",
     "may",
-    "jun.",
-    "jul.",
-    "aug.",
-    "sep.",
-    "oct.",
-    "nov.",
-    "dec.",
+    "jun",
+    "jul",
+    "aug",
+    "sep",
+    "oct",
+    "nov",
+    "dec",
   ];
   let month = months[date.getMonth()];
   let dayOfMonth = date.getDate();
-  return `${day} ${dayOfMonth} ${month} ${hours}:${minutes}`;
+  return `${day} ${dayOfMonth} ${month}. ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {

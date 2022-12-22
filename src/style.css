@@ -65,21 +65,12 @@ a {
   top: -34px;
 }
 
-.weather-temperature .active {
-  color: #2a2438;
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
-
 .numbers {
   color: #6643b5;
 }
 
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   color: #2a2438;
 }
